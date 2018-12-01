@@ -1,10 +1,10 @@
 #!/bin/bash
 
-urlprefix='http://example.com'
+urlprefix='http://192.168.100.147'
 
 function log (){
 	#Disable for your personal safety, be sure only enable this when your are debugging
-	#echo -e "`date`⌚️$1" >> ~/.bd/log
+	echo -e "`date`⌚️$1" >> ~/.bd/log
 }
 
 function checkver(){
