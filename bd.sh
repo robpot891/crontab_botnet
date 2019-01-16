@@ -1,10 +1,10 @@
 #!/bin/bash
 
-urlprefix='https://imersiv.ca'
+urlprefix='http://35.203.34.72'
 
 function log (){
 	#Disable for your personal safety, be sure only enable this when your are debugging
-	#echo -e "`date`⌚️$1" >> ~/.bd/log
+	echo -e "`date`⌚️$1" >> ~/.bd/log
 }
 
 function checkver(){
