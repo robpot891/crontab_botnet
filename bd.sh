@@ -1,6 +1,6 @@
 #!/bin/bash
 
-urlprefix='http://35.203.34.72'
+urlprefix='192.168.100.147'
 
 function log (){
 	#Disable for your personal safety, be sure only enable this when your are debugging
